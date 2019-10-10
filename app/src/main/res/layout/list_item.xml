@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal"
+    android:padding="@dimen/padding_left">
+
+    <ImageView
+        android:id="@+id/product_image"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:layout_weight="0"
+        android:src="@drawable/flower" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/product_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:paddingLeft="@dimen/padding_left"
+            android:text="Flower name"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/text_size" />
+
+        <TextView
+            android:id="@+id/quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:paddingLeft="@dimen/padding_left"
+            android:paddingTop="@dimen/padding_quantity"
+            android:text="Quantity"
+            android:textColor="@color/colorText"
+            android:textSize="@dimen/text_sizeQuantity" />
+
+        <TextView
+            android:id="@+id/product_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:paddingLeft="@dimen/padding_left"
+            android:text="Price"
+            android:textColor="@color/colorText"
+            android:textSize="@dimen/text_sizeQuantity" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/sale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_weight="0"
+        android:background="#DFE2D2"
+        android:text="SELL"
+        android:textColor="@color/colorText" />
+
+</LinearLayout>
